@@ -1,0 +1,13 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+/* taille de la police par défaut */
+html { font-size: 18px; }
+
+body { 
+    line-height: 1.625;
+    background-color: #fff;
+}
