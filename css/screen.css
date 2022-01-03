@@ -16,6 +16,7 @@ body {
     font-family: "Source Sans Pro", sans-serif;
     width: 100%;
     height: 100vh;
+    color: #6f6f6f;
 }
 
 a {
@@ -24,6 +25,10 @@ a {
     transition: color .3s;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 .style-border {
     border: 2px solid #c8944694;
     padding: 5px;
@@ -59,11 +64,9 @@ a {
     color: #c89446;
 }
 
-
 .menu-item {
     margin: 0 15px;
 }
-
 
 .baseline {
     margin-top: 100px;
@@ -94,6 +97,38 @@ a {
     letter-spacing: 4px;
 }
 
+.container-small {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 960px;
+}
+
+
+.title {
+    line-height: 1.1;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: #000;
+    margin: 0;
+    font-weight: bold;
+}
+
+.title::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #c89446;
+    margin-bottom: 10px;
+}
+
+.title span {
+    font-family: "Pinyon Script", serif;
+    color: #c89446;
+    font-size: 2.5rem;
+    display: block;
+}
+
 @media (max-width: 916px) {
     .topbar {
         padding: 20px;
@@ -103,7 +138,6 @@ a {
     .logo {
         margin-bottom: 20px;
     }
-
     .menu {
         display: block;
         text-align: center;
@@ -123,7 +157,8 @@ a {
     .baseline-slogan {
         font-size: 1rem;
         font-weight: 400;
-}
+    }
+
 }
 
 
